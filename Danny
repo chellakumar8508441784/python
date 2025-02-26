@@ -1,0 +1,455 @@
+import pyttsx3
+import speech_recognition as sr
+import datetime
+import wikipedia
+import webbrowser
+import os
+engine = pyttsx3.init("sapi5")
+voices = engine.getProperty("voices")
+engine.setProperty("voice", voices[0].id)
+def speak(audio):
+ engine.say(audio)                                       engine.runAndWait()
+# In wishMe() function instead of Mr. Mukesh you can set your own name
+def wishMe():
+ hour = int(datetime.datetime.now().hour)
+ if hour >= 0 and hour < 12:
+ print("Hello Mr. Mukesh, Good Morning!")
+ speak("Hello Mr. Mukesh, Good Morning!")
+ elif hour >= 12 and hour < 18:
+ print("Hello Mr. Mukesh, Good Afternoon!")
+ speak("Hello Mr. Mukesh, Good Afternoon!")
+ else:
+ print("Hello Mr. Mukesh, Good Evening!")                speak("Hello Mr. Mukesh, Good Evening!")
+ print("I am JARVIS Sir, please tell me how may I help you?")
+ speak("I am JARVIS Sir, please tell me how may I help you?")
+def takeCommand():
+ r = sr.Recognizer()
+ r.pause_threshold = 1.5 source:
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+The program import is not installed. Install it by executing:
+ pkg install imagemagick
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `"voice",'
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `audio'
+bash: syntax error near unexpected token `def'
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `"Hello Mr. Mukesh, Good Morning!"'
+bash: syntax error near unexpected token `"Hello Mr. Mukesh, Good Morning!"'
+bash: syntax error near unexpected token `elif'
+bash: syntax error near unexpected token `"Hello Mr. Mukesh, Good Afternoon!"'
+bash: syntax error near unexpected token `"Hello Mr. Mukesh, Good Afternoon!"'
+No command else: found, did you mean:
+ Command plser in package libgnustep-base
+bash: syntax error near unexpected token `"Hello Mr. Mukesh, Good Evening!"'
+bash: syntax error near unexpected token `"Hello Mr. Mukesh, Good Evening!"'
+bash: syntax error near unexpected token `"I am JARVIS Sir, please tell me how may I help you?"'
+bash: syntax error near unexpected token `"I am JARVIS Sir, please tell me how may I help you?"'
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `('
+bash: syntax error near unexpected token `"\nListening..."'
+r.pause_threshold: command not found
+~ $ audio = r.listen(source)
+stagram")
+
+ webbrowser.open("https://instagram.com"bash: syntax error near unexpected token `('
+)
+
+ elif "open twitt~ $
+~ $  try:
+No command try: found, did you mean:
+ Command tr in package coreutils
+ Command tred in package graphviz
+ Command tree in package tree
+ Command trz in package trzsz-go
+ Command ttyc in package ttyc
+ Command ttyd in package ttyd
+~ $
+~ $  print("Recognizing...")
+bash: syntax error near unexpected token `"Recognizing..."'
+~ $
+~ $  query = r.recognize_google(audio, language="en-in")bash: syntax error near unexpected token `('
+~ $
+~ $  print(f"User said: {query}")
+bash: syntax error near unexpected token `f"User said: {query}"'
+~ $
+~ $  except Exception as e:
+No command except found, did you mean:
+ Command expect in package expect
+~ $
+~ $  print("Say that again please...")
+bash: syntax error near unexpected token `"Say that again please..."'
+~ $
+~ $  return "None"
+bash: return: None: numeric argument required
+bash: return: can only `return' from a function or sourced script
+~ $
+~ $  return query
+bash: return: query: numeric argument required
+bash: return: can only `return' from a function or sourced script
+~ $
+~ $ if __name__ == "__main__":
+>
+>  wishMe()
+>
+>  while True:
+>
+>  query = takeCommand().lower()
+bash: syntax error near unexpected token `('
+~ $
+~ $  if "wikipedia" in query:
+>
+>  print("Searching Wikipedia...")
+bash: syntax error near unexpected token `"Searching Wikipedia..."'
+~ $
+~ $  speak("Searching Wikipedia...")
+bash: syntax error near unexpected token `"Searching Wikipedia..."'
+~ $
+~ $  query = query.replace("wikipedia", "")
+bash: syntax error near unexpected token `('
+~ $
+~ $  results = wikipedia.summary(query, sentences=2)
+bash: syntax error near unexpected token `('
+~ $
+~ $  link = wikipedia.page(query)
+bash: syntax error near unexpected token `('
+~ $
+~ $  speak("According to Wikipedia")
+bash: syntax error near unexpected token `"According to Wikipedia"'
+~ $
+~ $  print(f"\n{results}")
+bash: syntax error near unexpected token `f"\n{results}"'
+~ $
+~ $  speak(results)
+bash: syntax error near unexpected token `results'
+~ $
+~ $  print(f"For more info go to - {link.url}")
+bash: syntax error near unexpected token `f"For more info go to - {link.url}"'
+~ $
+~ $  speak(f"For more info go to - {link.url}")
+bash: syntax error near unexpected token `f"For more info go to - {link.url}"'
+~ $
+~ $  elif "open google" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened Google")
+bash: syntax error near unexpected token `"\nOpened Google"'
+~ $
+~ $  speak("Opened Google")
+bash: syntax error near unexpected token `"Opened Google"'
+~ $
+~ $  webbrowser.open("https://google.com")
+bash: syntax error near unexpected token `"https://google.com"'
+~ $
+~ $  elif "open youtube" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened YouTube")
+bash: syntax error near unexpected token `"\nOpened YouTube"'
+~ $
+~ $  speak("Opened YouTube")
+bash: syntax error near unexpected token `"Opened YouTube"'
+~ $
+~ $  webbrowser.open("https://youtube.com")
+bash: syntax error near unexpected token `"https://youtube.com"'
+~ $
+~ $  elif "open instagram" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened Instagram")
+bash: syntax error near unexpected token `"\nOpened Instagram"'
+~ $
+~ $  speak("Opened Instagram")
+bash: syntax error near unexpected token `"Opened Instagram"'
+~ $
+~ $  webbrowser.open("https://instagram.com")
+bash: syntax error near unexpected token `"https://instagram.com"'
+~ $
+~ $  elif "open twitter" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened Twitter")
+bash: syntax error near unexpected token `"\nOpened Twitter"'
+~ $
+~ $  speak("Opened Twitter")
+bash: syntax error near unexpected token `"Opened Twitter"'
+~ $
+~ $  webbrowser.open("https://twitter.com")
+bash: syntax error near unexpected token `"https://twitter.com"'
+~ $
+~ $  elif "open reddit" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened Reddit")
+bash: syntax error near unexpected token `"\nOpened Reddit"'
+~ $
+~ $  speak("Opened Reddit")
+bash: syntax error near unexpected token `"Opened Reddit"'
+~ $
+~ $  webbrowser.open("https://reddit.com")
+path=path)
+
+ print("\nOpened Visual Studio Code")
+
+ speakbash: syntax error near unexpected token `"https://reddit.com"'
+("Opened Visual Studio Code")
+
+ elif "open pycharm" in query or "open python ide" in query:
+
+ # Paste the PyCharm's path which is in your system
+
+ p~ $
+~ $  elif "open pinterest" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened Pinterest")
+bash: syntax error near unexpected token `"\nOpened Pinterest"'
+~ $
+~ $  speak("Opened Pinterest")
+bash: syntax error near unexpected token `"Opened Pinterest"'
+~ $
+~ $  webbrowser.open("https://pinterest.com")
+bash: syntax error near unexpected token `"https://pinterest.com"'
+~ $
+~ $  elif "open github" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened GitHub")
+bash: syntax error near unexpected token `"\nOpened GitHub"'
+~ $
+~ $  speak("Opened GitHub")
+bash: syntax error near unexpected token `"Opened GitHub"'
+~ $
+~ $  webbrowser.open("https://github.com")
+bash: syntax error near unexpected token `"https://github.com"'
+~ $
+~ $  elif "open netlify" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened Netlify")
+bash: syntax error near unexpected token `"\nOpened Netlify"'
+~ $
+~ $  speak("Opened Netlify")
+bash: syntax error near unexpected token `"Opened Netlify"'
+~ $
+~ $  webbrowser.open("https://netlify.com")
+bash: syntax error near unexpected token `"https://netlify.com"'
+~ $
+~ $  elif "open whatsapp" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened whatsapp")
+bash: syntax error near unexpected token `"\nOpened whatsapp"'
+~ $
+~ $  speak("Opened whatsapp")
+bash: syntax error near unexpected token `"Opened whatsapp"'
+~ $
+~ $  webbrowser.open("https://web.whatsapp.com/")
+bash: syntax error near unexpected token `"https://web.whatsapp.com/"'
+~ $
+~ $  elif "open linkedin" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nOpened linkedin")
+bash: syntax error near unexpected token `"\nOpened linkedin"'
+~ $
+~ $  speak("Opened linkedin ")
+bash: syntax error near unexpected token `"Opened linkedin "'
+~ $
+~ $  webbrowser.open("https://www.linkedin.com/login")
+bash: syntax error near unexpected token `"https://www.linkedin.com/login"'
+~ $
+~ $  elif "open discord" in query or "open dc" in query:bash: syntax error near unexpected token `elif'
+~ $
+~ $  # Paste Discord's path which is in your system
+~ $
+~ $  path = "C:\\Users\\HP\\AppData\\Local\\Discord\\app-1.0.9007\\Discord.exe"
+No command path found, did you mean:
+ Command path6 in package ipv6toolkit
+ Command patch in package patch
+~ $
+~ $  os.startfile(filepath=path)
+bash: syntax error near unexpected token `filepath=path'
+~ $
+~ $  print("\nOpened Discord")
+bash: syntax error near unexpected token `"\nOpened Discord"'
+~ $
+~ $  speak("Opened Discord")
+bash: syntax error near unexpected token `"Opened Discord"'
+~ $
+~ $  elif "open vs code" in query or "open code" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  # Paste the VS Code's path which is in your system
+~ $
+~ $  path = (
+bash: syntax error near unexpected token `('
+~ $
+~ $  "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\Code.exe: command not found
+~ $
+~ $  )
+bash: syntax error near unexpected token `)'
+~ $
+~ $  os.startfile(filepath=path)
+bash: syntax error near unexpected token `filepath=path'
+~ $
+~ $  print("\nOpened Visual Studio Code")
+bash: syntax error near unexpected token `"\nOpened Visual Studio Code"'
+~ $
+~ $  speak("Opened Visual Studio Code")
+bash: syntax error near unexpected token `"Opened Visual Studio Code"'
+~ $
+~ $  elif "open pycharm" in query or "open python ide" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  # Paste the PyCharm's path which is in your system
+~ $
+~ $  path = "C:\\Program Files\\JetBrains\\PyCharm Community Edition
+>
+> 2023.3.2\\bin\\pycharm64.exe"
+No command path found, did you mean:
+ Command path6 in package ipv6toolkit
+ Command patch in package patch
+~ $
+~ $  os.startfile(filepath=path)
+bash: syntax error near unexpected token `filepath=path'
+~ $
+~ $  print("\nOpened PyCharm")
+bash: syntax error near unexpected token `"\nOpened PyCharm"'
+~ $
+~ $  speak("Opened PyCharm")
+bash: syntax error near unexpected token `"Opened PyCharm"'
+~ $
+~ $  elif (
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  "open intelli j" in query
+open intelli j: command not found
+~ $
+~ $  or "open intellij" in query
+No command or found, did you mean:
+ Command ar in package binutils
+ Command ar in package binutils-is-llvm
+ Command od in package coreutils
+ Command hr in package hr
+ Command lr in package lr
+ Command mr in package myrepos
+ Command o in package o-editor
+ Command ol in package ol
+ Command sr in package surfraw
+ Command tor in package tor
+~ $
+~ $  or "open java ide" in query
+s in your system
+
+ path = "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition
+
+2022.2.1\\bin\\idea64.exe"
+
+ os.startfile(filepath=path)
+
+ print("\nOpened IntelliJ")
+
+ speak("Opened IntelliJ")
+
+ elif "date" in query:
+
+ date = datetime.datetime
+
+ final_date = date.date()
+
+ print(f"\nSir, today's date is {final_date}")
+
+ speak("Sir, today's date is {final_date}")
+
+ elif "time" in query:
+
+ strTime = datetime.datetime.now().strftime("%H:%M:%S")
+
+ print(f"\nSir, the time right now is {strTime}")
+
+ speak(f"Sir, the time right now is {strTime}")
+
+ elif "exit" in query:
+
+ print("\nYou can call me again at any time, Bye Sir")
+
+ speak("You can call me again at any time, Bye Sir")No command or found, did you mean:
+ Command ar in package binutils
+ Command ar in package binutils-is-llvm
+ Command od in package coreutils
+ Command hr in package hr
+ Command lr in package lr
+ Command mr in package myrepos
+ Command o in package o-editor
+ Command ol in package ol
+ Command sr in package surfraw
+ Command tor in package tor
+~ $
+~ $  ):
+bash: syntax error near unexpected token `)'
+~ $
+~ $  # Paste the IntelliJ's path which is in your system~ $
+~ $  path = "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition
+>
+> 2022.2.1\\bin\\idea64.exe"
+No command path found, did you mean:
+ Command path6 in package ipv6toolkit
+ Command patch in package patch
+~ $
+~ $  os.startfile(filepath=path)
+bash: syntax error near unexpected token `filepath=path'
+~ $
+~ $  print("\nOpened IntelliJ")
+bash: syntax error near unexpected token `"\nOpened IntelliJ"'
+~ $
+~ $  speak("Opened IntelliJ")
+bash: syntax error near unexpected token `"Opened IntelliJ"'
+~ $
+~ $  elif "date" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  date = datetime.datetime
+date: extra operand ‘datetime.datetime’
+Try '/data/data/com.termux/files/usr/bin/date --help' for more information.
+~ $
+~ $  final_date = date.date()
+bash: syntax error near unexpected token `('
+~ $
+~ $  print(f"\nSir, today's date is {final_date}")
+bash: syntax error near unexpected token `f"\nSir, today's date is {final_date}"'
+~ $
+~ $  speak("Sir, today's date is {final_date}")
+bash: syntax error near unexpected token `"Sir, today's date is {final_date}"'
+~ $
+~ $  elif "time" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  strTime = datetime.datetime.now().strftime("%H:%M:%S")
+bash: syntax error near unexpected token `('
+~ $
+~ $  print(f"\nSir, the time right now is {strTime}")
+bash: syntax error near unexpected token `f"\nSir, the time right now is {strTime}"'
+~ $
+~ $  speak(f"Sir, the time right now is {strTime}")
+bash: syntax error near unexpected token `f"Sir, the time right now is {strTime}"'
+~ $
+~ $  elif "exit" in query:
+bash: syntax error near unexpected token `elif'
+~ $
+~ $  print("\nYou can call me again at any time, Bye Sir")
+bash: syntax error near unexpected token `"\nYou can call me again at any time, Bye Sir"'
+~ $
+~ $  speak("You can call me again at any time, Bye Sir")exit()
